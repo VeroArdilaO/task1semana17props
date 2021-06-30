@@ -1,0 +1,30 @@
+.body {
+  border: 3px solid red;
+  padding: 20px;
+}
+
+p {
+  font-family: Lato;
+}
+.first-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  border: 3px solid green;
+}
+.header {
+  font-size: 25px;
+}
+.appUser {
+  font-size: 25px;
+  border: 3px solid blue;
+}
+.profileUser {
+  margin-top: 20px;
+  padding: 30px;
+  border: 3px solid green;
+}
+
+.appProfileUser {
+  font-size: 20px;
+}
