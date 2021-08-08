@@ -1,5 +1,6 @@
 .body {
-  border: 3px solid red;
+  background-color: #e5e5e5;
+  border: 1px solid black;
   padding: 20px;
 }
 

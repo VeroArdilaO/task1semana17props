@@ -6,8 +6,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./perfil-usuario.component.css']
 })
 export class PerfilUsuarioComponent implements OnInit {
-  @Input() profile: string;
-  @Input() user: string;
+  @Input() user = {name: "", country: ""};
 
   constructor() {}
 
