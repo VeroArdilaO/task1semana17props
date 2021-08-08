@@ -1,13 +1,7 @@
-
 <div class="body">
-    <app-header class="header" [user]="user"></app-header>
+  <app-header class="header" [user]="user"></app-header>
   <div>
 
-    <app-perfil-usuario [user]= user></app-perfil-usuario>
+    <app-perfil-usuario [user]= user (updatedUser)="updateUser($event)"></app-perfil-usuario>
   </div>
 </div>
-
-
-
-
-
