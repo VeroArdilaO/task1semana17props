@@ -6,8 +6,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-  
-  @Input() message:string;
+  @Input() user = { name: '' , country: '' };
 
   constructor() {}
 

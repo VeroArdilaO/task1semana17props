@@ -1,25 +1,7 @@
 
 <div class="body">
-  <div class="first-container">
-    <app-header class="header" [message]="messageHeader"></app-header>
-    <app-usuario-info
-      class="appUser"
-      [Usuario]="messageUser1"
-      [Pais]="messageUser2"
-    ></app-usuario-info>
-  </div>
-  <div class="profileUser">
-    <app-perfil-usuario
-      class="appProfileUser"
-      [profile]="messageProfileUser"
-      [user]="messageUser"
-    ></app-perfil-usuario>
-  <form>
-    <app-perfil-form
-      [name]="messageName"
-      [country]="messageCountry"
-    ></app-perfil-form>
-  </form>
+    <app-header class="header" [user]="user"></app-header>
+  <div>
   </div>
 </div>
 

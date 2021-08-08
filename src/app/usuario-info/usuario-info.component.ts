@@ -6,8 +6,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./usuario-info.component.css']
 })
 export class UsuarioInfoComponent implements OnInit {
-  @Input() Usuario: string;
-  @Input() Pais: string;
+  @Input() user = { name: "", country: ""};
 
   constructor() {}
 

@@ -1,5 +1,6 @@
 // RECOMIENDO ABRIR EL PROYECYO EN OPEN IN NEW WINDOW PARA MEJOR VISUALIZACIÓN
 import { Component, VERSION } from '@angular/core';
+import { IUser } from './Interfaces/user';
 
 @Component({
   selector: 'my-app',
@@ -7,13 +8,14 @@ import { Component, VERSION } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  messageHeader = 'Super Mega CRM';
-  messageUser1 = 'xxxyyy';
-  messageUser2 = 'Colombia';
-  messageProfileUser = 'Modificar Perfil Usuario';
-  messageUser = 'Usuario';
-  messageName = 'Nombre y Apellidos';
-  messageCountry = 'País';
+  user: IUser = {
+    name: 'Verónica',
+    country: 'Colombia'
+  };
+
+  updateUser(user: IUser) {
+    this.user = user;
+  }
 }
 
 /* 3. Que pasa si, una vez actualices los datos del perfil de usuario, el cliente necesita que se actualice la información dentro de usuario-info.component? Que cambios necesitarias hacer?
@@ -36,9 +38,4 @@ Los componentes que no requieren la información pienso que serian el header y e
 
 Una forma óptima para propagar la información del usuario podria ser por medio de un servicio
 e inyectarlo dentro del componente padre, para que asi este lo propague a sus hijos.
-
-
-
-
-
 */
