@@ -1,14 +1,29 @@
-<div class="container">
-  <div class="name">
-    <label>{{name}}</label>
-    <input>
+<form class="container">
+  <div class="input-name">
+    <label for="exampleInputEmail1" class="form-label">Nombre y Apellido</label>
+
+    <input
+      type="text"
+      class="form-control"
+      id="exampleInputEmail"
+      name="fullname"
+      [(ngModel)]="user.name"
+    />
+    <div id="emailHelp" class="form-text">Agrega tu nombre y apellidos</div>
   </div>
-  <div class="country">
-    <label>{{country}}</label>
-    <div class="selector">
-      <select>
-      <option>Argentina</option>
-    </select>
-    </div>
+
+  <div class="input-country">
+    <label for="exampleInputPassword1" class="form-label">Pais</label>
+    <input
+      type="text"
+      class="form-control"
+      id="exampleInputPassword1"
+      name="country"
+      [(ngModel)]="user.country"
+    />
   </div>
-  <button class="button" type="submit"> Enviar </button>
+
+  <button type="button" class="button" (click)="submit()">
+    Submit
+  </button>
+</form>
