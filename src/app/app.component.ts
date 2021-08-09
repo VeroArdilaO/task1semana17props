@@ -23,8 +23,7 @@ export class AppComponent {
 Responde esta pregunta en forma de comentario dentro del archivo app.component.ts. e.g.
 
 ----RESPUESTA------------------------------------------------------------------------
-// Solo tendria que cambiar el contenido de las variables messageUser1 y messageUser2, 
-//ya que estos estan comunicados con el usuario-info y asi este presenta los cambios.
+// En ese caso, al utilizar una interface, esto ayuda a que se pueda actualizar el contenido de esta en caso de algún cambio, ya sea quitar, agregar o cambiar y llamarlo dentro de UsuarioInfoComponent, al estarse propagando la información por medio del input.
 
 --------------------------------------------------------------------------------------
 
