@@ -12,7 +12,7 @@ export class PerfilFormComponent implements OnInit {
   country: string = '';
 
   @Input() public set user(value: IUser) {
-    this.user = { ...value };
+    this._user = { ...value };
   }
   public get user() {
     return this._user;
